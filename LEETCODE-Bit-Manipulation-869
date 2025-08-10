@@ -1,0 +1,19 @@
+class Solution {
+    public String getsort(int n)
+    {
+        char [] arr=String.valueOf(n).toCharArray();
+        Arrays.sort(arr);
+        return new String(arr);
+    }
+    public boolean reorderedPowerOf2(int n) {
+        String s=getsort(n);
+        for(int i=0;i<=29;i++)
+        {
+            if(s.equals(getsort(1<<i))) 
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+}
