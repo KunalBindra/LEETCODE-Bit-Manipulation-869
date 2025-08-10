@@ -3,7 +3,7 @@
 
 ## **Code Understanding**
 
-You have two methods:
+You have one method:
 
 1. **`getsort(int n)`**
 
@@ -14,26 +14,8 @@ You have two methods:
 
    **Example:**
    `n = 241` → `"241"` → `['2','4','1']` → sort → `['1','2','4']` → `"124"`
-
-2. **`reorderedPowerOf2(int n)`**
-
-   * Gets the sorted version of `n`.
-   * Checks all powers of 2 from `1 << 0` (which is 1) to `1 << 29` (which is 2^29 = 536870912).
-   * For each power of 2, it sorts its digits and compares with the sorted digits of `n`.
-   * If any matches, returns `true`; else returns `false`.
-
----
-
+   
 ## **Dry Run Example**
-
-Let’s say:
-
-```java
-Solution sol = new Solution();
-boolean ans = sol.reorderedPowerOf2(128);
-```
-
----
 
 ### Step 1: `reorderedPowerOf2(128)`
 
