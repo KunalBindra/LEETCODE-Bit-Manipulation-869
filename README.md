@@ -82,5 +82,3 @@ This algorithm works because:
 * The loop only checks powers of 2 (since `1 << i` generates them).
 
 ---
-
-If you want, I can dry run it **for a number that returns false** to show the full loop in action. That’s usually where hidden logic mistakes show up.
